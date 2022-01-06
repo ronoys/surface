@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 import Calculate from './One/Calculate';
+import Form from './Two/Form'
 
 
 function TabPanel(props) {
@@ -95,7 +96,7 @@ export default function Bar() {
         
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          <p>Page 2</p>
+          <Form></Form>
           
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>

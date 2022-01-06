@@ -16,7 +16,7 @@ export default function ContinuousSlider() {
     <Box sx={{ width: 200 }}>
         <Card score = {value}></Card>
         <Slider aria-label="Volume" value={value} onChange={handleChange} />
-        
+        <p>{value}</p>
     </Box>
   );
 }

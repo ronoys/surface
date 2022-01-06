@@ -1,5 +1,5 @@
 import './App.css';
-import Books from './Books'
+
 import Tab from './Tabs';
 
 function App() {
