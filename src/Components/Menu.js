@@ -1,5 +1,5 @@
 import { Container, makeStyles, Typography } from '@material-ui/core';
-import { Android, Apple, Facebook, Google, Instagram, LinkedIn, Pinterest, Reddit, Twitter, WhatsApp, YouTube } from '@mui/icons-material';
+import { Apple, Facebook, Google, Instagram, LinkedIn, Pinterest, Reddit, Twitter, WhatsApp, YouTube } from '@mui/icons-material';
 import React from 'react';
 
 

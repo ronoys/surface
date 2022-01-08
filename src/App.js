@@ -1,7 +1,9 @@
-import { Grid, Paper} from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import * as React from 'react';
 import Navbar from './Components/Navbar';
 import Menu from './Components/Menu';
+import Center from './Components/Center';
+import Rightbar from './Components/Rightbar';
 
 export default function App() {
 
@@ -9,14 +11,14 @@ export default function App() {
     <div>
       <Navbar />
       <Grid container>
-        <Grid item xs={2}>
+        <Grid item sm={2}>
           <Menu />
         </Grid>
-        <Grid item xs={7}>
-            
+        <Grid item sm={8}>
+          <Center />    
         </Grid>
-        <Grid item xs={3}>
-            
+        <Grid item sm={2}>
+          <Rightbar />
         </Grid>
       </Grid>
     </div>
