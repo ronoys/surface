@@ -16,7 +16,7 @@ function Rightbar(props) {
 
     return (
       <Container className = {classes.container}>
-          <p>Placeholder</p>
+          <p>Sample</p>
       </Container>
     );
   };

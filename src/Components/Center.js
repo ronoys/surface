@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, makeStyles } from '@material-ui/core';
+import { Container, Fab, makeStyles } from '@material-ui/core';
 import CardTemplate from './Card';
+import { Add } from '@mui/icons-material';
 
 const posts = [
   {image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png", title: "React", description: "JavaScript Framework. Used to make this site."},
@@ -25,6 +26,11 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(2),
     flexWrap: "wrap",
   },
+  button: {
+    display: 'flex',
+    alignItems: 'left',
+    justifyContent: 'space-between'
+  }
 }));
   
 function Center(props) {
@@ -33,6 +39,12 @@ function Center(props) {
     return (
       <Container className = {classes.container}>
           {posts.map(post => <CardTemplate image = {post.image} title = {post.title} description = {post.description} /> )}
+          <div className = "button">
+            <Fab color = "primary">
+            <Add />
+            </Fab>
+          </div>
+          
       </Container>
     );
   };
