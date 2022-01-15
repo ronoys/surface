@@ -28,8 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     display: 'flex',
-    alignItems: 'left',
-    justifyContent: 'space-between'
+    marginLeft: '90%'
   }
 }));
   
@@ -39,7 +38,7 @@ function Center(props) {
     return (
       <Container className = {classes.container}>
           {posts.map(post => <CardTemplate image = {post.image} title = {post.title} description = {post.description} /> )}
-          <div className = "button">
+          <div className = {classes.button}>
             <Fab color = "primary">
             <Add />
             </Fab>

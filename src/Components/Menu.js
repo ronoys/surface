@@ -1,4 +1,4 @@
-import { Container, makeStyles, Typography } from '@material-ui/core';
+import { Button, Container, makeStyles, Typography } from '@material-ui/core';
 import { Apple, Facebook, Google, Instagram, LinkedIn, Pinterest, Reddit, Twitter, WhatsApp, YouTube } from '@mui/icons-material';
 import React from 'react';
 
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '20px'
     },
     text: {
-        fontWeight: '500'
+        fontWeight: '500',
     }
 }));
 
@@ -31,55 +31,56 @@ function Menu(props) {
     return (
         <div>
             <Container className = {classes.container}>
-                <div className = {classes.item}>
+                <Button className = {classes.item} uppercase = {false}>
+                    
                     <Apple className = {classes.icon} />
                     <Typography className = {classes.text}>Apple</Typography>
-                </div>
+                </Button>
 
-                <div className = {classes.item}>
+                <Button className = {classes.item}>
                     <Google className = {classes.icon} />
                     <Typography className = {classes.text}>Google</Typography>
-                </div>
+                </Button>
 
-                <div className = {classes.item}>
+                <Button className = {classes.item}>
                     <Facebook className = {classes.icon} />
                     <Typography className = {classes.text}>Facebook</Typography>
-                </div>
+                </Button>
 
-                <div className = {classes.item}>
+                <Button className = {classes.item}>
                     <Twitter className = {classes.icon} />
                     <Typography className = {classes.text}>Twitter</Typography>
-                </div>
+                </Button>
 
-                <div className = {classes.item}>
+                <Button className = {classes.item}>
                     <LinkedIn className = {classes.icon} />
                     <Typography className = {classes.text}>LinkedIn</Typography>
-                </div>
+                </Button>
 
-                <div className = {classes.item}>
+                <Button className = {classes.item}>
                     <Pinterest className = {classes.icon} />
                     <Typography className = {classes.text}>Pinterest</Typography>
-                </div>
+                </Button>
 
-                <div className = {classes.item}>
+                <Button className = {classes.item}>
                     <Reddit className = {classes.icon} />
                     <Typography className = {classes.text}>Reddit</Typography>
-                </div>
+                </Button>
 
-                <div className = {classes.item}>
+                <Button className = {classes.item}>
                     <YouTube className = {classes.icon} />
                     <Typography className = {classes.text}>YouTube</Typography>
-                </div>
+                </Button>
 
-                <div className = {classes.item}>
+                <Button className = {classes.item}>
                     <WhatsApp className = {classes.icon} />
                     <Typography className = {classes.text}>WhatsApp</Typography>
-                </div>
+                </Button>
 
-                <div className = {classes.item}>
+                <Button className = {classes.item}>
                     <Instagram className = {classes.icon} />
                     <Typography className = {classes.text}>Instagram</Typography>
-                </div>
+                </Button>
 
             </Container>
         </div>
